@@ -16,7 +16,7 @@ function signup() {
   async function handleSignup(e) {
     try {
       const res = await axios.post(
-        "https://zerodha-stock-trading-platform-8qu2.onrender.com/signup",
+        "https://zerodha-stock-trading-platform-1-mbcv.onrender.com/signup",
         formData
       );
       console.log(formData);
