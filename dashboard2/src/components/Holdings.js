@@ -7,9 +7,13 @@ const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/allHoldings").then((res) => {
-      setAllHoldings(res.data);
-    });
+    axios
+      .get(
+        "https://zerodha-stock-trading-platform-8qu2.onrender.com/allHoldings"
+      )
+      .then((res) => {
+        setAllHoldings(res.data);
+      });
   }, []);
 
   const labels = allHoldings.map((subArray) => subArray["name"]);

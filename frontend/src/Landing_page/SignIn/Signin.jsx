@@ -20,7 +20,10 @@ function SignIn() {
   }
   async function handleLogin() {
     try {
-      const res = await axios.post("http://localhost:3002/signin", formData);
+      const res = await axios.post(
+        "https://zerodha-stock-trading-platform-8qu2.onrender.com/signin",
+        formData
+      );
 
       if (res.data.success === true) {
         localStorage.setItem("token", res.data.token);
