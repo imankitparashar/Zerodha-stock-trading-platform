@@ -1,0 +1,52 @@
+.pricing-img {
+  width: 140px;
+  gap: 5px;
+  height: 100px;
+  margin-right: 5px;
+}
+.pricing-para {
+  font-size: 14px;
+  color: #666;
+}
+p {
+  color: #666666;
+}
+@media (max-width: 576px) {
+  .footer {
+    width: 100% !important;
+  }
+}
+#supportHero {
+  background-color: rgb(56, 126, 209);
+  color: white;
+}
+#supportWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#supportHero a {
+  color: white;
+}
+#supportWrapper div {
+  margin: 0 150px;
+}
+form input {
+  height: 50px;
+  width: 390px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+@media (max-width: 576px) {
+  form input {
+    width: 100% !important;
+    margin-right: 40px;
+  }
+}
+@media (max-width: 576px) {
+  #supportWrapper h2 {
+    width: 100% !important;
+  }
+}
