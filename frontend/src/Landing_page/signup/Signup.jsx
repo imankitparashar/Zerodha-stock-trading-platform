@@ -15,12 +15,16 @@ function signup() {
 
   async function handleSignup(e) {
     try {
-      const res = await axios.post("https://zerodha-stock-trading-platform-8qu2.onrender.com/signup", formData);
+      const res = await axios.post(
+        "https://zerodha-stock-trading-platform-8qu2.onrender.com/signup",
+        formData
+      );
       console.log(formData);
       if (res.data.success === true) {
         setSuccess("Account Created Succesfully. Redirecting..");
         setTimeout(() => {
-          window.location.href = https://zerodha-stock-trading-platform-1.onrender.com;
+          window.location.href =
+            "https://zerodha-stock-trading-platform-1.onrender.com";
         }, 1500);
       }
     } catch (err) {
