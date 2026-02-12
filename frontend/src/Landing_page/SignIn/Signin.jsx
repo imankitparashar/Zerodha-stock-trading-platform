@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -20,17 +20,21 @@ function SignIn() {
   }
   async function handleLogin() {
     try {
+<<<<<<< HEAD
       const res = await axios.post(
         "https://zerodha-stock-trading-platform-8qu2.onrender.com/signin",
         formData
       );
+=======
+      const res = await axios.post("https://zerodha-stock-trading-platform-8qu2.onrender.com/signin", formData);
+>>>>>>> 8da730bad348753e0228e479a14d6c25cdbeec16
 
       if (res.data.success === true) {
         localStorage.setItem("token", res.data.token);
 
         setSuccess("Login Successful. Redirecting....");
         setTimeout(() => {
-          window.location.href = "http://localhost:3000";
+          window.location.href = "https://zerodha-stock-trading-platform-1.onrender.com";
         }, 1500);
       }
     } catch (err) {
