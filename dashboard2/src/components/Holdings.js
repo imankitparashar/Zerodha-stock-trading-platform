@@ -9,7 +9,7 @@ const Holdings = () => {
   useEffect(() => {
     axios
       .get(
-        "https://zerodha-stock-trading-platform-8qu2.onrender.com/allHoldings"
+        "https://zerodha-stock-trading-platform-1-mbcv.onrender.com/allHoldings"
       )
       .then((res) => {
         setAllHoldings(res.data);

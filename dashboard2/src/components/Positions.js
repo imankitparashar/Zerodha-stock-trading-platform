@@ -6,7 +6,7 @@ const Positions = () => {
   useEffect(() => {
     axios
       .get(
-        "https://zerodha-stock-trading-platform-8qu2.onrender.com/allPositions"
+        "https://zerodha-stock-trading-platform-1-mbcv.onrender.com/allPositions"
       )
       .then((res) => {
         setAllPositions(res.data);
