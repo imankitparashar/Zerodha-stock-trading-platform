@@ -24,7 +24,7 @@ function signup() {
         setSuccess("Account Created Succesfully. Redirecting..");
         setTimeout(() => {
           window.location.href =
-            "https://zerodha-stock-trading-platform-1.onrender.com";
+            "https://zerodha-stock-trading-platform-3.onrender.com";
         }, 1500);
       }
     } catch (err) {
